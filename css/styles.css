@@ -181,6 +181,7 @@ body {
 .contacts-link:hover,
 .contacts-link:focus {
 	color: var(--accent-color);
+	fill: var(--accent-color);
 }
 
 .contacts-icon {
@@ -188,6 +189,10 @@ body {
 	padding: 0;
 
 	fill: var(--text-color);
+}
+.contacts-link:hover .contacts-icon,
+.contacts-link:focus .contacts-icon {
+	fill: var(--accent-color);
 }
 
 /* Hero section  */
@@ -387,7 +392,7 @@ body {
 	column-gap: 10px;
 }
 .social-icon {
-	color: var(--text-color);
+	fill: var(--text-color);
 }
 
 .social-link {
@@ -405,7 +410,7 @@ body {
 }
 .social-link:hover .social-icon,
 .social-link:focus .social-icon {
-	color: var(--primary-background-color);
+	fill: var(--primary-background-color);
 }
 /* Clients  */
 
@@ -432,13 +437,15 @@ body {
 	align-items: center;
 }
 .clients-icon {
-	color: #afb1b8;
+	fill: #afb1b8;
 }
-.clients-icon:hover {
-	color: var(--accent-color);
+.clients-icon:hover,
+.clients-icon:focus {
+	fill: var(--accent-color);
 }
 
-.clients-item:hover {
+.clients-item:hover,
+.clients-item:focus {
 	border-color: var(--accent-color);
 }
 /* Footer  */
@@ -447,7 +454,12 @@ body {
 	background-color: #2f303a;
 	padding: 60px 0;
 }
+.footer-container {
+	display: flex;
 
+	column-gap: 70px;
+	margin: 0;
+}
 .footer-addres {
 	font-family: "Roboto", sans-serif;
 	font-style: normal;
@@ -486,6 +498,51 @@ body {
 
 .footer-list-item:not(:last-child) {
 	margin-bottom: 9px;
+}
+
+/* присоединяйтесь  */
+.join-title {
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 1.14;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+
+	color: #ffffff;
+	margin-bottom: 20px;
+}
+.footer-container {
+	max-width: 1200px;
+}
+.join {
+	display: block;
+}
+
+.join-list {
+	display: flex;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	gap: 10px;
+}
+
+.join-link {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 44px;
+	height: 44px;
+	border-radius: 100%;
+	background-color: rgba(255, 255, 255, 0.1);
+}
+
+.join-icon {
+	fill: var(--secondary-background-color);
+}
+
+.join-link:hover,
+.join-link:focus {
+	background-color: var(--accent-color);
 }
 
 /* Portfolio page  */
@@ -544,6 +601,13 @@ body {
 	width: 370px;
 
 	background: #ffffff;
+	cursor: pointer;
+}
+
+.portfolio-item:hover,
+.portfolio-item:focus {
+	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+		1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .border {
