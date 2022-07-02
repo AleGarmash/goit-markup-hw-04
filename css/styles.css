@@ -163,7 +163,8 @@ body {
 }
 
 .contacts-link {
-	display: block;
+	display: flex;
+	align-items: center;
 	padding-top: 32px;
 	padding-bottom: 32px;
 
@@ -174,11 +175,19 @@ body {
 	font-size: 14px;
 	line-height: 1.14;
 	letter-spacing: 0.02em;
+	column-gap: 10px;
 }
 
 .contacts-link:hover,
 .contacts-link:focus {
 	color: var(--accent-color);
+}
+
+.contacts-icon {
+	margin: 0;
+	padding: 0;
+
+	fill: var(--text-color);
 }
 
 /* Hero section  */
@@ -190,7 +199,7 @@ body {
 			rgba(47, 48, 58, 0.4),
 			rgba(47, 48, 58, 0.4)
 		),
-		url(../images/Img.jpg);
+		url(../images/Img.jpeg);
 	max-width: 1600px;
 
 	margin-left: auto;
@@ -249,6 +258,10 @@ body {
 	margin-right: 30px;
 }
 
+.advantages-icon {
+	background-color: #f5f4fa;
+	padding: 25px 100px;
+}
 /* .advantages-item {
 	background-color: red;
 } */
@@ -365,6 +378,69 @@ body {
 	color: #757575;
 }
 
+.social {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: flex;
+	justify-content: center;
+	column-gap: 10px;
+}
+.social-icon {
+	color: var(--text-color);
+}
+
+.social-link {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 44px;
+	height: 44px;
+	border-radius: 100%;
+}
+.social-link:hover,
+.social-link:focus {
+	background-color: #2196f3;
+	border-radius: 50%;
+}
+.social-link:hover .social-icon,
+.social-link:focus .social-icon {
+	color: var(--primary-background-color);
+}
+/* Clients  */
+
+.clints-list {
+	display: flex;
+	justify-content: center;
+	margin: 0;
+	padding: 0;
+	column-gap: 30px;
+	list-style: none;
+}
+.clients-item {
+	border: 1px solid #afb1b8;
+	border-radius: 4px;
+}
+
+.clients-icon {
+	padding: 16px 32px;
+}
+
+.clients-link {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.clients-icon {
+	color: #afb1b8;
+}
+.clients-icon:hover {
+	color: var(--accent-color);
+}
+
+.clients-item:hover {
+	border-color: var(--accent-color);
+}
 /* Footer  */
 
 .footer {
