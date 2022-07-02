@@ -32,7 +32,7 @@
 							<a href="./index.html" class="header-menu-link link">Студия</a>
 						</li>
 						<li class="header-menu-item item">
-							<a href="./portfolio.html" class="header-menu-link link curent"
+							<a href="./portfolio.html" class="header-menu-link curent link"
 								>Портфолио</a
 							>
 						</li>
@@ -46,11 +46,26 @@
 				<ul class="contacts list">
 					<li class="contacts-item">
 						<a href="mailto:info@devstudio.com" class="contacts-link link">
+							<svg
+								class="contacts-icon envelope"
+								aria-hidden="true"
+								width="16px"
+								height="12px"
+							>
+								<use href="./images/symbol-new.svg#icon-envelope"></use>
+							</svg>
 							info@devstudio.com
 						</a>
 					</li>
 					<li class="contacts-item link">
-						<a href="tel:+380961111111" class="contacts-link"
+						<a href="tel:+380961111111" class="contacts-link">
+							<svg
+								class="contacts-icon smartphone"
+								aria-hidden="true"
+								width="10px"
+								height="16px"
+							>
+								<use href="./images/symbol-new.svg#icon-smartphone"></use></svg
 							>+38 096 111 11 11</a
 						>
 					</li>
@@ -168,33 +183,73 @@
 
 		<!-- Footer -->
 		<footer class="footer">
-			<div class="container">
-				<a href="./index.html" class="footer-logo-link">
-					<span class="logo-accent">Web</span>Studio</a
-				>
-				<address class="footer-addres">
-					<ul class="footer-list list">
-						<li class="footer-list-item">
-							<a
-								href="https://bit.ly/3pXMvUd"
-								target="_blank"
-								rel="noopener noreferrer"
-								class="footer-address"
-								>г. Киев, пр-т Леси Украинки, 26
+			<div class="footer-container container">
+				<div class="footer-contacts">
+					<a href="./index.html" class="footer-logo-link">
+						<span class="logo-accent">Web</span>Studio</a
+					>
+					<div class="logo-area"></div>
+					<address class="footer-addres">
+						<ul class="footer-list list">
+							<li class="footer-list-item">
+								<a
+									href="https://bit.ly/3pXMvUd"
+									target="_blank"
+									rel="noopener noreferrer"
+									class="footer-address"
+									>г. Киев, пр-т Леси Украинки, 26
+								</a>
+							</li>
+							<li class="footer-list-item">
+								<a href="mailto:info@devstudio.com" class="footer-link link"
+									>info@example.com
+								</a>
+							</li>
+							<li class="footer-list-item">
+								<a href="tel:+380961111111" class="footer-link link"
+									>+38 096 111 11 11
+								</a>
+							</li>
+						</ul>
+					</address>
+				</div>
+
+				<div class="join">
+					<p class="join-title">ПРИСОЕДИНЯЙТЕСЬ</p>
+					<ul class="join-list">
+						<li class="join-item">
+							<a href="#" class="join-link">
+								<svg class="join-icon" width="20px" height="20px">
+									<use href="./images/symbol-new.svg#icon-instagram"></use>
+								</svg>
 							</a>
 						</li>
-						<li class="footer-list-item">
-							<a href="mailto:info@devstudio.com" class="footer-link link"
-								>info@example.com
+
+						<li class="join-item">
+							<a href="#" class="join-link">
+								<svg class="join-icon" width="20px" height="20px">
+									<use href="./images/symbol-new.svg#icon-twitter"></use>
+								</svg>
 							</a>
 						</li>
-						<li class="footer-list-item">
-							<a href="tel:+380961111111" class="footer-link link"
-								>+38 096 111 11 11
+
+						<li class="join-item">
+							<a href="#" class="join-link">
+								<svg class="join-icon" width="20px" height="20px">
+									<use href="./images/symbol-new.svg#icon-facebook"></use>
+								</svg>
+							</a>
+						</li>
+
+						<li class="join-item">
+							<a href="#" class="join-link">
+								<svg class="join-icon" width="20px" height="20px">
+									<use href="./images/symbol-new.svg#icon-linkedin"></use>
+								</svg>
 							</a>
 						</li>
 					</ul>
-				</address>
+				</div>
 			</div>
 		</footer>
 	</body>
