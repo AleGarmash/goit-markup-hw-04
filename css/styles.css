@@ -154,10 +154,7 @@ body {
 	letter-spacing: 0.02em;
 	list-style: none;
 }
-.header-menu-link:hover {
-	color: var(--accent-color);
-}
-
+.header-menu-link:hover,
 .header-menu-link:focus {
 	color: var(--accent-color);
 }
@@ -267,9 +264,7 @@ body {
 	background-color: #f5f4fa;
 	padding: 25px 100px;
 }
-/* .advantages-item {
-	background-color: red;
-} */
+
 .visually-hidden {
 	position: absolute;
 	width: 1px;
@@ -488,9 +483,7 @@ body {
 	color: var(--primary-background-color);
 }
 
-.footer-list a:hover {
-	color: var(--accent-color);
-}
+.footer-list a:hover,
 .footer-list a:focus {
 	color: var(--accent-color);
 }
