@@ -666,38 +666,50 @@ address {
 	color: #212121;
 }
 
-/* АНИМАЦИя */
-.box {
-	position: relative;
-	width: 300px;
-	height: 300px;
-	margin-left: auto;
-	margin-right: auto;
-	background-color: #bdbdbd;
-	box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
-		0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+.portfolio-text {
+	font-size: 16px;
+	line-height: 1.87;
+	letter-spacing: 0.03em;
+	color: var(--text-color);
+}
 
+/* АНИМАЦИя */
+
+.portfolio-item-wrapp {
+	position: relative;
 	overflow: hidden;
 }
-.box:hover .overlay {
-	transform: translatex(0);
-}
-
-.overlay {
+.portfolio-hover-text {
 	position: absolute;
-	top: 0;
-	left: 0;
+	top: 0px;
+	left: 0px;
 	width: 100%;
 	height: 100%;
-	background-color: #3f51b5;
-
-	transform: translatex(-100%);
-	transition: transform 250ms ease;
+	overflow: auto;
+	background: rgba(33, 150, 243, 0.9);
+	padding: 24px;
+	font-size: 18px;
+	line-height: 1.5;
+	letter-spacing: 0.03em;
+	color: var(--primary-background-color);
+	display: flex;
+	align-items: center;
+	transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	transform: translateY(100%);
 }
 
-.overlay > p {
-	color: #fff;
-	padding: 10px;
-	margin: 0;
-	font-size: 18px;
+.portfolio-item-link {
+	display: block;
+	width: 100%;
+	transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	text-decoration: none;
+}
+.portfolio-item-link:hover,
+.portfolio-item-link:focus {
+	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+		1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+.portfolio-item-link:hover .portfolio-hover-text,
+.portfolio-item-link:focus .portfolio-hover-text {
+	transform: translateY(0px);
 }
