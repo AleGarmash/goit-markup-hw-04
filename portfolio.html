@@ -29,10 +29,12 @@
 					<!--разделы меню /  -->
 					<ul class="header-menu list">
 						<li class="header-menu-item item">
-							<a href="./index.html" class="header-menu-link link">Студия</a>
+							<a href="./index.html" class="header-menu-link curent link"
+								>Студия</a
+							>
 						</li>
 						<li class="header-menu-item item">
-							<a href="./portfolio.html" class="header-menu-link curent link"
+							<a href="./portfolio.html" class="header-menu-link link"
 								>Портфолио</a
 							>
 						</li>
@@ -49,10 +51,10 @@
 							<svg
 								class="contacts-icon envelope"
 								aria-hidden="true"
-								width="16px"
-								height="12px"
+								width="20px"
+								height="15px"
 							>
-								<use href="./images/symbol-new.svg#icon-envelope"></use>
+								<use href="./images/icon.svg#icon-envelope"></use>
 							</svg>
 							info@devstudio.com
 						</a>
@@ -62,10 +64,10 @@
 							<svg
 								class="contacts-icon smartphone"
 								aria-hidden="true"
-								width="10px"
-								height="16px"
+								width="15px"
+								height="20px"
 							>
-								<use href="./images/symbol-new.svg#icon-smartphone"></use></svg
+								<use href="./images/icon.svg#icon-smartphone"></use></svg
 							>+38 096 111 11 11</a
 						>
 					</li>
@@ -97,15 +99,24 @@
 					<!-- карточки портфолио -->
 					<ul class="portfolio-list list">
 						<li class="portfolio-item">
-							<img
-								src="./images/portfolio/img.jpeg"
-								alt="веб-сайт"
-								width="370"
-								height="294"
-							/>
+							<div class="animation">
+								<img
+									src="./images/portfolio/img.jpeg"
+									alt="веб-сайт"
+									width="370"
+									height="294"
+								/>
+							</div>
 							<div class="border">
 								<h2 class="portfolio-title">Технокряк</h2>
 								<p class="portfolio-text">Веб-сайт</p>
+							</div>
+							<div class="portfolio-overlay">
+								<p class="hover-text">
+									Ресурс предлагает комплексные предложения с разным уровнем
+									функционала и сервисов. Все это позволит посетителю получить
+									исчерпывающие сведения о компании или частном лице.
+								</p>
 							</div>
 						</li>
 						<li class="portfolio-item">
