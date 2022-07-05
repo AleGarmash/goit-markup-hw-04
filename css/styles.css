@@ -190,6 +190,26 @@ address {
 	fill: var(--accent-color);
 }
 
+/* подчеркивание раздела меню */
+
+.header-menu-item {
+	position: relative;
+}
+.header-menu-link::after {
+	content: "";
+	position: absolute;
+	bottom: -2px;
+	left: 0px;
+	right: 0px;
+	width: 100%;
+	height: 4px;
+	background: #2196f3;
+	opacity: 0;
+	border-radius: 2px;
+}
+.header-menu-link.curent::after {
+	opacity: 1;
+}
 /* Hero section  */
 .hero {
 	padding: 200px 0;
@@ -625,8 +645,6 @@ address {
 	overflow: hidden;
 }
 
-.animation {
-}
 .portfolio-item:hover {
 	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
 		1px 4px 6px rgba(0, 0, 0, 0.16);
@@ -648,45 +666,38 @@ address {
 	color: #212121;
 }
 
-.portfolio-text {
-	font-size: 16px;
-	line-height: 1.88;
+/* АНИМАЦИя */
+.box {
+	position: relative;
+	width: 300px;
+	height: 300px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #bdbdbd;
+	box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+		0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
 
-	letter-spacing: 0.03em;
-	color: #757575;
-
-	margin-top: 4px;
+	overflow: hidden;
+}
+.box:hover .overlay {
+	transform: translatex(0);
 }
 
-.portfolio-overlay {
+.overlay {
 	position: absolute;
 	top: 0;
-	bottom: 0;
+	left: 0;
 	width: 100%;
-	height: 294px;
-	background: rgba(33, 150, 243, 0.9);
+	height: 100%;
+	background-color: #3f51b5;
 
-	transform: translatey(100%);
+	transform: translatex(-100%);
 	transition: transform 250ms ease;
 }
 
-.portfolio-item:hover .portfolio-overlay {
-	transform: translatey(0);
-}
 .overlay > p {
 	color: #fff;
 	padding: 10px;
 	margin: 0;
 	font-size: 18px;
-}
-.hover-text {
-	font-size: 18px;
-	line-height: 1.5;
-	/* or 156% */
-
-	letter-spacing: 0.03em;
-
-	color: #ffffff;
-
-	padding: 63px 24px;
 }
